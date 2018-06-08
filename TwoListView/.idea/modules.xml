@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/TwoListView.iml" filepath="$PROJECT_DIR$/TwoListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mvp+retro+rxjava/mvp+retro+rxjava.iml" filepath="$PROJECT_DIR$/mvp+retro+rxjava/mvp+retro+rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twolistview/twolistview.iml" filepath="$PROJECT_DIR$/twolistview/twolistview.iml" />
+    </modules>
+  </component>
+</project>
