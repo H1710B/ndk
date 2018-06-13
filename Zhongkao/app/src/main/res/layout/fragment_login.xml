@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    tools:context=".login.LoginFragment">
+
+    <ListView
+        android:layout_width="150dp"
+        android:id="@+id/lv_left"
+        android:layout_height="match_parent"/>
+
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_right"></ListView>
+
+</LinearLayout>
