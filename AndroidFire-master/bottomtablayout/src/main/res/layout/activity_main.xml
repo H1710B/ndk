@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.open_open.myapplication.MainActivity">
+
+
+    <com.eftimoff.androipathview.PathView
+        android:id="@+id/pv_dog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pathColor="@color/colorPrimary"
+        app:pathWidth="3dp"
+        app:svg="@raw/dog" />
+
+    <!--①app:pathColor="@android:color/white"	绘制的线的颜色
+    ②app:svg="@raw/settings"		资源目录SVG图片的引用
+    ③app:pathWidth="3"			绘制线的粗度-->
+
+</LinearLayout>
