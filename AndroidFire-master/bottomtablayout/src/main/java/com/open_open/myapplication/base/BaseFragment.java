@@ -10,6 +10,9 @@ import android.view.ViewGroup;
 
 import com.open_open.myapplication.utils.TUtil;
 
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
+
 /******************************************
  * 类名称：BaseFragment
  * 类描述：
@@ -24,6 +27,8 @@ public abstract class BaseFragment<P extends BasePresenter, M extends
         BaseModel> extends Fragment {
     public P p;
     public M m;
+    private Unbinder unbinder;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable
@@ -34,6 +39,7 @@ public abstract class BaseFragment<P extends BasePresenter, M extends
         if (this instanceof BaseView) {
             p.setMV(m, this);
         }
+        unbinder = ButterKnife.bind(this, inflate);
         initView(inflate);
         initData();
         return inflate;
@@ -41,4 +47,11 @@ public abstract class BaseFragment<P extends BasePresenter, M extends
     protected abstract void initView(View inflate);
     protected abstract void initData();
     protected abstract int getLayoutId();
+
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        unbinder.unbind();
+    }
 }

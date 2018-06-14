@@ -53,10 +53,11 @@ public abstract class BaseActivity<T extends BasePresenter, E extends BaseModel>
 
     private void initFragmentManager() {
         manager = App.mActivity.getSupportFragmentManager();
-        transaction = manager.beginTransaction();
+
     }
 
     public Fragment add(int containerId, Class<? extends Fragment> fragmentClass, boolean isChild, Map<String,String> map){
+        transaction = manager.beginTransaction();
         //用Fragment的名字设置一个tag值
         String tag = fragmentClass.getSimpleName();
         //使用tag值来判断当前Fragment是否实例化
