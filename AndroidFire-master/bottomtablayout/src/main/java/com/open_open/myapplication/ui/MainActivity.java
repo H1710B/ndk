@@ -1,18 +1,17 @@
-package com.open_open.myapplication;
+package com.open_open.myapplication.ui;
 
 import android.content.Intent;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.Toast;
 
 import com.eftimoff.androipathview.PathView;
+import com.open_open.myapplication.R;
 import com.open_open.myapplication.base.BaseActivity;
-import com.open_open.myapplication.bean.Bean;
 import com.open_open.myapplication.ui.home.HomeActivity;
-import com.open_open.myapplication.ui.home.HomeContract;
 import com.open_open.myapplication.ui.home.HomeModel;
 import com.open_open.myapplication.ui.home.HomePresenter;
 
-public class MainActivity extends BaseActivity<HomePresenter,HomeModel> implements HomeContract.View {
+public class MainActivity extends BaseActivity<HomePresenter,HomeModel>  {
 
 
     PathView pvDog;
@@ -38,13 +37,4 @@ public class MainActivity extends BaseActivity<HomePresenter,HomeModel> implemen
         }).interpolator(new AccelerateInterpolator()).start();
     }
 
-    @Override
-    public void succ(Bean bean) {
-
-    }
-
-    @Override
-    public void fail(String msg) {
-
-    }
 }
